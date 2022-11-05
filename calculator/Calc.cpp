@@ -17,7 +17,7 @@ int main(int argc, char **argv)
     for(i=2; i<argc; i++) {
         st+=1;
     }
-    if ((st<5) or (st >7)){
+    if (((st<5) or (st >7)) and (st!=0)){
         help();
     }
     while((opt = getopt(argc, argv, "md:h")) != -1) {
